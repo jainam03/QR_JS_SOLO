@@ -10,14 +10,16 @@
 <body>
     <div class="app-wrap">
         <h2>A QR code generator built in Vanilla JS</h2>
-
+        <br>    
         <div class="user-div">
             <input type="text" id="input" class="input" placeholder="Insert a URL here..." >
+            <br>
             <button type="submit" id="qr-code"  >Generate</button>
         </div>
 
-        <span id="loading"></span>
-
+        <div class="loader-div">
+            <span id="loading" class="loader" ></span>
+        </div>
         <div class="qr-div" >
             <img src="" id="code-img">
         </div>

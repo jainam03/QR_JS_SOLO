@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
 
+    box-sizing: border-box;
+    color: white;
 }
 
 body {
-    box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-color: #1d2b42;
+    
 }
 
 .app-wrap {
@@ -18,7 +22,7 @@ body {
 }
 
 h2 {
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -37,9 +41,9 @@ h2 {
     max-width: 280px;
     padding: 10px 15px;
 
-    border: 1.5px solid black;
+    border: none;
     outline: none;
-    background-color: rgba(18, 19, 37, 0.3);
+    background-color: rgba(255,255,255,0.1);
     border-radius: 16px;
 
     color: #313131;
@@ -50,6 +54,10 @@ h2 {
 
 .user-div input:focus {
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+.user-div input::placeholder {
+    color: white;
 }
 
 .user-div button {
@@ -78,8 +86,38 @@ h2 {
     transform: scale(0.95);
 }
 
-/* .user-div button:-moz-suppressed {
-    background-color: white;
-    border: 1px solid black;
-    color: black;
-} */
+.qr-div {
+    display: flex;
+    justify-content: center;  
+}
+
+.loader-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#loading{
+    display: none;
+
+    text-align: center;
+    width: 40px;
+    height: 40px;
+
+    margin-bottom:30px ;
+
+    border-radius: 50%;
+    border: 6px solid #ffffff26;
+    border-top: 5px solid #fff ;
+
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
