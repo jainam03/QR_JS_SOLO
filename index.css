@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     margin: 0;
@@ -6,12 +6,14 @@
 
     box-sizing: border-box;
     color: white;
-    font-family: 'Merienda',sans-serif;
+    font-family: 'Poppins',sans-serif;
+
+    letter-spacing: 1px;
 }
 
 body {
 
-    background-color: #1d2b42;
+    background-color: #27364f;
     
 }
 
@@ -24,7 +26,7 @@ body {
 }
 
 h2 {
-    margin-top: 20px;
+    margin: 20px;
     text-align: center;
 }
 
@@ -40,12 +42,13 @@ h2 {
 
 .user-div input {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     padding: 10px 15px;
 
     border: none;
     outline: none;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.2);
+    color: black;
     border-radius: 16px;
 
     color: #313131;
@@ -55,7 +58,7 @@ h2 {
 }
 
 .user-div input:focus {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .user-div input::placeholder {
@@ -65,7 +68,9 @@ h2 {
 .user-div button {
     cursor: pointer;
 
-    margin: 30px 10px;
+    color: black;
+
+    margin: 20px 0px 30px 0px;
     padding: 10px;
     border-radius: 5px;
 
@@ -80,12 +85,15 @@ h2 {
 }
 
 .user-div button:hover {
-    background-color: rgb(44, 66, 106);
+    /* background-color: rgb(44, 66, 106); */
+    background: rgba(255,255,255,0.1);
     color: white;
 }
 
 .user-div button:active {
     transform: scale(0.95);
+    background-color: cornflowerblue;
+    color: black;
 }
 
 .qr-div {

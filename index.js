@@ -2,6 +2,8 @@ let qr_code = document.querySelector("#qr-code")
 let code_img = document.querySelector('#code-img')
 let loader = document.querySelector("#loading")
 
+let clrBtn = document.querySelector('#clr-btn')
+
 qr_code.addEventListener("click", () => {
     loader.style.display = "block"
 
@@ -17,4 +19,8 @@ qr_code.addEventListener("click", () => {
 
     let api = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${input}`;
     code_img.src = api;
+})
+
+clrBtn.addEventListener("click",function() {
+    window.location.reload()
 })
